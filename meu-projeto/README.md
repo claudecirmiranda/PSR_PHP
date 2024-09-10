@@ -229,3 +229,43 @@ Este arquivo define o que deve ser ignorado no repositório Git.
 .env
 /config/config.php
 ```
+
+### **5\. Adicionando `phpunit`**
+
+#### **1\. Adicionar PHPUnit como Dependência de Desenvolvimento**
+
+Execute o seguinte comando na raiz do seu projeto para adicionar o PHPUnit como uma dependência de desenvolvimento:
+
+```
+composer require --dev phpunit/phpunit
+```
+
+Isso fará com que o Composer baixe a versão apropriada do PHPUnit para o seu projeto e a coloque na pasta `vendor/`.
+
+#### **2\. Verificar a Estrutura da Pasta `vendor/`**
+
+Após a instalação, você deve ver a pasta `vendor/bin/` contendo o arquivo `phpunit`. A estrutura do seu projeto deve agora incluir:
+
+markdown
+
+```cmd
+vendor/
+├── bin/
+│   └── phpunit
+└── composer/
+└── ...
+```
+
+#### **3\. Executar os Testes**
+
+Agora que o PHPUnit está instalado corretamente, você pode rodar os testes usando o comando:
+
+`vendor/bin/phpunit tests/Controller/HomeControllerTest.php`
+
+Ou, se você estiver usando Windows e não estiver em um ambiente Bash, pode ser necessário usar a barra invertida (`\`):
+
+`vendor/bin/phpunit tests/Controller/HomeControllerTest.php`
+
+### **Considerações Finais**
+
+Depois de adicionar o PHPUnit como uma dependência de desenvolvimento e executá-lo, você estará pronto para rodar seus testes. Isso garante que os padrões PSR-1 e PSR-12 sejam seguidos e que seu código funcione conforme o esperado.
