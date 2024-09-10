@@ -5,7 +5,7 @@ Para garantir um código de qualidade em PHP utilizando o VS Code, criamos este 
 
 ### 1\. **Introdução aos Padrões de Qualidade em PHP**
 
-*   **PSR (PHP Standards Recommendations):** Utilize as recomendações PSR, especialmente [PSR-1]([/Arquitetura-Cloud-NAGEM/Ambiente-Conteinerizado-para-Projetos-PHP/Padrões-de-Qualidade-em-PHP/Guia-PSR%2D1:-Basic-Coding-Standard](https://github.com/claudecirmiranda/PSR_PHP/blob/main/PSR-1.md)) (Basic Coding Standard) e PSR-12 (Extended Coding Style), para assegurar consistência e qualidade no código.
+*   **PSR (PHP Standards Recommendations):** Utilize as recomendações PSR, especialmente [PSR-1](https://github.com/claudecirmiranda/PSR_PHP/blob/main/PSR-1.md)) (Basic Coding Standard) e [PSR-12](https://github.com/claudecirmiranda/PSR_PHP/blob/main/PSR-12.md) (Extended Coding Style), para assegurar consistência e qualidade no código.
 *   **Documentação:** Comentários claros e aderência ao PHPDoc para documentação inline.
 *   **Testes:** Implementação de testes unitários utilizando PHPUnit para validar funcionalidades.
 
